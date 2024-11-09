@@ -1,204 +1,306 @@
 :root {
-    --primer: rgb(0, 153, 255);
-    --bg : #FFFF;
+  --primer: rgb(0, 153, 255);
+  --bg: #ffff;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--bg);
-    color: #0000;
-    min-height: 2000px;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #0000;
+  /* min-height: 3000px; */
 }
 
 /* Navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.4rem 7%;
-    background-color: rgba(255, 255, 255, 0.637);
-    border-bottom: 1px solid var(--primer);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(255, 255, 255, 0.637);
+  border-bottom: 1px solid var(--primer);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
 }
 
 .navbar .navbar-logo {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #000;
-    font-style: italic;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  font-style: italic;
 }
 
 .navbar .navbar-logo span {
-    color: var(--primer);
+  color: var(--primer);
 }
 
-.navbar .navbar-nav a{
-    color: black;
-    display: inline-block;
-    font-size: 1.2rem;
-    margin: 0 1rem;
+.navbar .navbar-nav a {
+  color: black;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0 1rem;
 }
 
 .navbar .navbar-nav a:hover {
-    color: var(--primer);
+  color: var(--primer);
 }
 
 .navbar .navbar-nav a::after {
-    content: '';
-    display: block;
-    padding-bottom: 0.5rem;
-    border-bottom: 0.1rem solid var(--primer);
-    transform: scaleX(0);
-    transition: 0.3s linear;
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primer);
+  transform: scaleX(0);
+  transition: 0.3s linear;
 }
 
 .navbar .navbar-nav a:hover::after {
-    transform: scaleX(0.4);
+  transform: scaleX(0.4);
 }
 
 .navbar .navbar-extra a {
-    color: black;
-    margin: 0 0.5rem ;
+  color: black;
+  margin: 0 0.5rem;
 }
 
 .navbar .navbar-extra a:hover {
-    color: var(--primer);
+  color: var(--primer);
 }
 
 #hamburger-menu {
-    display: none;
-
+  display: none;
 }
-
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background-image: url('../img/kepala.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/kepala.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
 .hero::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 30%;
-    bottom: 0;
-    background: linear-gradient(0deg, rgb(255, 255, 255) 8%, rgba(255, 255, 255,0) 50%);
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgb(255, 255, 255) 8%,
+    rgba(255, 255, 255, 0) 50%
+  );
 }
 
-
 .hero .content {
-    padding: 1.4rem 7%;
-    max-width: 60rem;
+  padding: 1.4rem 7%;
+  max-width: 60rem;
 }
 
 .hero .content h1 {
-    font-size: 5em;
-    color: #ffffff;
-    text-shadow: 1px 1px 3px #000000c3;
-    line-height: 1.2;
+  font-size: 5em;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #000000c3;
+  line-height: 1;
 }
 
 .hero .content h1 span {
-    color: var(--primer);
+  color: var(--primer);
 }
 
 .hero .content p {
-    font-size: 1rem;
-    margin-top: 1;
-    line-height: 1.2;
-    font-weight: 200;
-    color: #000;
-    text-shadow: 1px 1px 2px #000000c3;
-    line-height: 1.2;
+  font-size: 1.2rem;
+  margin-top: 1;
+  line-height: 1.2;
+  font-weight: 100;
+  color: #000;
+  text-shadow: 0.5px 0.5px 0.5px #000000c3;
+  line-height: 1.2;
 }
 
 .hero .content .cta {
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 1rem 3rem;
-    font-size: 1.4rem;
-    color: #ffffff;
-    background-color: var(--primer);
-    border-radius: 0.5rem;
-    box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #ffffff;
+  background-color: var(--primer);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+/* About Section */
+.about,
+.menu,
+.contact {
+  padding: 9.5rem 7% 1.4rem;
+}
+
+.about h2, 
+.menu h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #000;
+  margin-bottom: 3rem;
+}
+
+.about h2 span,
+.menu h2 span {
+  color: var(--primer);
+}
+
+.about .row {
+  display: flex;
 }
 
 
+.about .row .content {
+  flex: 1 1 20rem;
+  padding: 0 1rem;
+  color: #000;
+  text-align: center;
+}
+
+.about .row .content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about .content p {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+/* Menu Section */
+.menu h2,
+.contact h2 {
+    margin-bottom: 1rem;
+}
+.menu p {
+    text-align: center;
+    color: #000;
+    max-width: 35%;
+    margin: auto;
+    font-weight: 200;
+    line-height: 1.2;
+}
+
+/* Hubungi Mbah */
+.contact h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 3rem;
+}
+.contact {
+    background-color: var(--primer);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+.contact .socials {
+    padding: 1rem 0;
+}
+.contact .socials a {
+    color: #ffffff;
+    margin: 0.5rem;
+}
+.contact .socials a:hover {
+    color: #000;
+}
+.contact .links a:hover {
+    color: #000;
+}
+.contact .links {
+    margin-bottom: 1.4rem;
+}
+.contact .links a {
+    color: #ffffff;
+    padding: 1rem 1rem;
+}
+.contact .credit {
+    font-size: 0.5;
+    color: #ffffff;
+}
+.contact .credit a {
+    color: #000;
+    font-weight: bolder;
+}
 /* Media Queries */
 
 /* Laptop */
 @media (max-width: 1366px) {
-    html {
-        font-size: 75%;
-    }
+  html {
+    font-size: 75%;
+  }
 }
 
 /* Tablet */
 @media (max-width: 768px) {
-    html {
-        font-size: 60%;
-    }
+  html {
+    font-size: 60%;
+  }
 
-    #hamburger-menu {
-        display: inline-block;
-    }
+  #hamburger-menu {
+    display: inline-block;
+  }
 
-    .navbar .navbar-nav {
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        background-color: whitesmoke;
-        width: 30rem;
-        height: 100vh;
-        transition: 0.5s;
-    }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: whitesmoke;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.5s;
+  }
 
-    .navbar .navbar-nav.active {
-        right: 0;
-    }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
 
-    .navbar .navbar-nav a {
-        color: black;
-        display: block;
-        margin: 1.5rem;
-        padding: 0.5rem;
-        font-size: 2rem;
-    }
+  .navbar .navbar-nav a {
+    color: black;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
 
-    .navbar .navbar-nav a::after {
-        transform-origin: 0 0;
-    }
-    
-    .navbar .navbar-nav a:hover::after {
-        transform: scaleX(0.2);
-    }
-    
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
 }
 
 /* Mobile Phone */
 @media (max-width: 450px) {
-    html {
-        font-size: 50%;
-    }
+  html {
+    font-size: 50%;
+  }
 }
