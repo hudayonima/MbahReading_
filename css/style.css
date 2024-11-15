@@ -1,6 +1,6 @@
 :root {
-  --primer: rgb(0, 153, 255);
-  --bg: #ffff;
+  --primer: #8B4513;
+  --bg: #E8E8E8;
 }
 
 * {
@@ -20,7 +20,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #0000;
-  /* min-height: 3000px; */
+  min-height: 3000px;
 }
 
 /* Navbar */
@@ -29,7 +29,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
-  background-color: rgba(255, 255, 255, 0.637);
+  background-color: #e8e8e894;
   border-bottom: 1px solid var(--primer);
   position: fixed;
   top: 0;
@@ -107,7 +107,7 @@ body {
   bottom: 0;
   background: linear-gradient(
     0deg,
-    rgb(255, 255, 255) 8%,
+    #E8E8E8 8%,
     rgba(255, 255, 255, 0) 50%
   );
 }
@@ -129,10 +129,10 @@ body {
 }
 
 .hero .content p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-top: 1;
   line-height: 1.2;
-  font-weight: 100;
+  font-weight: 200;
   color: #000;
   text-shadow: 0.5px 0.5px 0.5px #000000c3;
   line-height: 1.2;
@@ -161,7 +161,7 @@ body {
   font-size: 2.5rem;
   text-align: center;
   color: #000;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .about h2 span,
@@ -181,39 +181,52 @@ body {
   text-align: center;
 }
 
-.about .row .content h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
 .about .content p {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 200;
-  line-height: 1.4;
+  line-height: 1.2;
+}
+
+.about .content p span {
+ color: var(--primer);
 }
 
 /* Menu Section */
-.menu h2,
-.contact h2 {
-    margin-bottom: 1rem;
+.menu h2 {
+    margin-bottom: 2rem;
 }
-.menu p {
+.menu h3 {
     text-align: center;
     color: #000;
-    max-width: 35%;
+    max-width: 60%;
     margin: auto;
-    font-weight: 200;
-    line-height: 1.2;
+    font-weight: 600;
+    line-height:2;
 }
 
-/* Hubungi Mbah */
-.contact h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 3rem;
+.menu .row {
+ color: #000;
+ display: flex;
+ flex-wrap: wrap;
+ margin-top: 5rem;
+ justify-content: center;
 }
+
+.menu .row .menu-card {
+ text-align: center;
+}
+
+.menu .row .menu-card img {
+ border-radius: 50%;
+ width: 80%;
+}
+
+.menu .row .menu-card .menu-card-title {
+ margin-top: 1.5rem auto 1rem;
+}
+/* Hubungi Mbah */
+
 .contact {
     background-color: var(--primer);
     text-align: center;
