@@ -22,20 +22,43 @@
   <body>
     <!-- Navbar Start -->
     <nav class="navbar">
-      <a href="#" class="navbar-logo">Mbah<span>Reading</span></a>
+      <a href="#" class="navbar-logo">Mbah2<span>Reading</span></a>
 
       <div class="navbar-nav">
         <a href="#home">Beranda</a>
-        <a href="#about">Tentang Si Mbah</a>
+        <!-- <a href="#about">Tentang Si Mbah</a> -->
         <a href="#menu">Perpustakaan</a>
+        <a href="#products">Produk</a>
         <a href="#contact">Hubungi Si Mbah</a>
       </div>
 
       <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="read"><i data-feather="book-open"></i></a>
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        <a href="#" id="shopping-cart-button"
+          ><i data-feather="shopping-cart"></i
+        ></a>
       </div>
+
+      <!-- Search Start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="Mau cari apa..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- Search End -->
+
+      <!-- Shopping Cart Start -->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/Sampul/erreur-404-jpg.jpg" alt="Produk 1" />
+          <div class="item-detail">
+            <h3>Untitled</h3>
+            <div class="item-price">USD 10.000</div>
+          </div>
+          <i data-feather="trash" class="remove-item"></i>
+        </div>
+      </div>
+      <!-- Shopping Cart End -->
     </nav>
     <!-- Navbar End -->
 
@@ -56,7 +79,7 @@
     <!-- Hero Section End -->
 
     <!-- Tentang Si Mbah Start -->
-    <section id="about" class="about">
+    <!-- <section id="about" class="about">
       <h2>Tentang Si <span>Mbah</span></h2>
 
       <div class="row">
@@ -75,23 +98,141 @@
         </div>
         >
       </div>
-    </section>
+    </section> -->
 
     <!-- Tentang Si Mbah End -->
 
     <!-- Perpus Start -->
     <section id="menu" class="menu">
       <h2>Perpustakaan Si <span>Mbah</span></h2>
-      <h3>Pilih Cerita Yang Mau Kamu Baca!</h3>
 
-     <div class="row">
-      <div class="menu-card">
-        <img src="/img/Sampul/PDUT.jpg" alt="Sampul1" class="menu-card-img">
-        <h4 class="menu-card-title">Pria Di Ujung Tanduk</h4>
+      <div class="row">
+        <div class="menu-card">
+          <img
+            src="./img/Sampul/erreur-404-jpg.jpg"
+            alt="Sampul"
+            class="menu-card-img"
+          />
+          <h4 class="menu-card-title">Untitled</h4>
+        </div>
+        <div class="menu-card">
+          <img
+            src="./img/Sampul/erreur-404-jpg.jpg"
+            alt="Sampul"
+            class="menu-card-img"
+          />
+          <h4 class="menu-card-title">Untitled</h4>
+        </div>
+        <div class="menu-card">
+          <img
+            src="./img/Sampul/erreur-404-jpg.jpg"
+            alt="Sampul"
+            class="menu-card-img"
+          />
+          <h4 class="menu-card-title">Untitled</h4>
+        </div>
+        <div class="menu-card">
+          <img
+            src="./img/Sampul/erreur-404-jpg.jpg"
+            alt="Sampul"
+            class="menu-card-img"
+          />
+          <h4 class="menu-card-title">Untitled</h4>
+        </div>
+        <div class="menu-card">
+          <img
+            src="./img/Sampul/erreur-404-jpg.jpg"
+            alt="Sampul"
+            class="menu-card-img"
+          />
+          <h4 class="menu-card-title">Untitled</h4>
+        </div>
+        <div class="menu-card">
+          <img
+            src="./img/Sampul/erreur-404-jpg.jpg"
+            alt="Sampul"
+            class="menu-card-img"
+          />
+          <h4 class="menu-card-title">Untitled</h4>
+        </div>
       </div>
-     </div>
     </section>
     <!-- Perpus End -->
+
+    <!-- Produk Start -->
+
+    <section class="products" id="products">
+      <h2>Mau Beli <span>Buku?</span></h2>
+      <p>
+        Selain menyediakan berbagai macam bacaan, Mbah2<span>Reading</span> juga
+        menyediakan buku-buku novel yang dapat kamu beli lho..
+      </p>
+
+      <div class="row">
+        <div class="product-card">
+          <div class="product-icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="more-vertical"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/Sampul/erreur-404-jpg.jpg" alt="Produk 1" />
+          </div>
+          <div class="product-content">
+            <h3>Untitled</h3>
+          </div>
+          <div class="product-price">USD 10.000</div>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="more-vertical"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/Sampul/erreur-404-jpg.jpg" alt="Produk 1" />
+          </div>
+          <div class="product-content">
+            <h3>Untitled</h3>
+          </div>
+          <div class="product-price">USD 10.000</div>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="more-vertical"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/Sampul/erreur-404-jpg.jpg" alt="Produk 1" />
+          </div>
+          <div class="product-content">
+            <h3>Untitled</h3>
+          </div>
+          <div class="product-price">USD 10.000</div>
+        </div>
+        <div class="product-card">
+          <div class="product-icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="more-vertical"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/Sampul/erreur-404-jpg.jpg" alt="Produk 1" />
+          </div>
+          <div class="product-content">
+            <h3>Untitled</h3>
+          </div>
+          <div class="product-price">USD 10.000</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produk End -->
 
     <!-- Kontak Start -->
     <section id="contact" class="contact">
@@ -107,7 +248,7 @@
 
       <div class="links">
         <a href="#home">Beranda</a>
-        <a href="#about">Tentang Si Mbah</a>
+        <!-- <a href="#about">Tentang Si Mbah</a> -->
         <a href="#menu">Perpustakaan</a>
         <a href="#contact">Hubungi Si Mbah</a>
       </div>
@@ -117,6 +258,29 @@
       </div>
     </section>
     <!-- Kontak End -->
+
+    <!-- Modal box item details start-->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/Sampul/erreur-404-jpg.jpg" alt="Product 1" />
+          <div class="product-content">
+            <h3>Untitled</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+              exercitationem soluta, debitis ad corrupti accusamus maxime
+              laudantium aspernatur eum assumenda!
+            </p>
+            <div class="product-price">USD 10.000</div>
+            <a href="#"
+              ><i data-feather="shopping-cart"></i> <span>add to cart</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal box item details end-->
 
     <!-- Feather Icons -->
     <script>
