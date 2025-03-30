@@ -2,7 +2,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #0000;
-  min-height: 3000px;
+  /* min-height: 3000px; */
 }
 
 /* Content */
@@ -62,3 +62,25 @@ body {
   text-align: justify;
 }
 
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
