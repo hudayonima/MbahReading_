@@ -1,0 +1,64 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #0000;
+  min-height: 3000px;
+}
+
+/* Content */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/PDUT_cover_ttl.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+}
+
+.hero .cover {
+  padding: 1.4rem 7%;
+  position: absolute;
+  bottom: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/*.cover h2 {
+  font-size: larger;
+  color: aliceblue;
+  text-shadow: #000;
+} */
+
+/* Isi */
+.isi {
+  padding: 2rem 7%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: black;
+}
+
+.isi .cerita h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.isi .cerita p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  text-indent: 2rem;
+  padding: 5px;
+  line-height: 1.5;
+  margin: 20px;
+  text-align: justify;
+}
+
