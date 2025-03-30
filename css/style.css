@@ -309,9 +309,13 @@ body {
   font-weight: 300;
 }
 
+.menu .row .menu-card a {
+  color: black;
+}
+
 /* Produk */
 .products {
-  padding: 8rem 7% 1.4rem;
+  padding: 10rem 9% 3rem;
 }
 
 .products h2 {
