@@ -307,10 +307,15 @@ body {
 .menu .row .menu-card .menu-card-title {
   margin-top: 1rem auto 0.5rem;
   font-weight: 300;
+  font-size: large;
+  font-weight: bold;
 }
 
 .menu .row .menu-card a {
   color: black;
+  margin-top: 1rem auto 0.5rem;
+  font-size: large;
+  font-weight: bold;
 }
 
 /* Produk */
@@ -434,7 +439,6 @@ body {
   font-weight: bolder;
 }
 
-
 /* Modal  Box */
 /* Item detail */
 .modal {
@@ -446,7 +450,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-container {
@@ -459,7 +463,6 @@ body {
   width: 80%;
   animation: animateModal 0.5s;
 }
-
 
 /* Modal animation */
 @keyframes animateModal {
@@ -506,15 +509,14 @@ body {
 }
 
 .modal-content a {
-   display: flex;
-   gap: 1rem;
-   width: 12rem;
-   background-color: var(--primer);
-   color: #ffffff;
-   margin-top: 1rem;
-   padding: 1rem 1.6rem;
+  display: flex;
+  gap: 1rem;
+  width: 12rem;
+  background-color: var(--primer);
+  color: #ffffff;
+  margin-top: 1rem;
+  padding: 1rem 1.6rem;
 }
-
 
 /* Media Queries */
 
