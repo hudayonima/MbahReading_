@@ -300,7 +300,9 @@ body {
 }
 
 .menu .row .menu-card img {
-  border-radius: 10%;
+  border-radius: 5%;
+  height: 200px;
+  width: 100px;
   width: 90%;
 }
 
@@ -335,13 +337,12 @@ body {
 }
 
 .products p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #000;
   margin-top: 0.5;
   line-height: 1.2;
   font-weight: 500;
   text-align: center;
-  font-size: x-large;
 }
 
 .products p span {
@@ -350,7 +351,7 @@ body {
 
 .products .row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 1.5rem;
   margin-top: 4rem;
 }
@@ -389,7 +390,8 @@ body {
 }
 
 .products .product-image img {
-  height: 25rem;
+  height: 200px;
+  width: 100%;
 }
 
 .products .product-content h3 {
@@ -415,7 +417,7 @@ body {
 }
 .contact .socials a {
   color: #ffffff;
-  margin: 0.5rem;
+  margin: 0.3rem;
 }
 .contact .socials a:hover {
   color: #000;
@@ -424,7 +426,7 @@ body {
   color: #000;
 }
 .contact .links {
-  margin-bottom: 1.4rem;
+  margin-bottom: 1rem;
 }
 .contact .links a {
   color: #ffffff;
@@ -434,11 +436,18 @@ body {
   font-size: 0.5;
   color: #ffffff;
 }
-.contact .credit a {
-  color: #000;
-  font-weight: bolder;
+.contact .credit p {
+  display: inline-flex;
+  justify-content: center;
 }
-
+.contact .credit a {
+  color: #ffffff;
+  font-weight: bolder;
+  margin-left: 5px;
+}
+.contact .credit a:hover {
+  color: #000;
+}
 /* Modal  Box */
 /* Item detail */
 .modal {
