@@ -301,16 +301,13 @@ body {
 
 .menu .row .menu-card img {
   border-radius: 5%;
-  height: 200px;
+  height: 170px;
   width: 100px;
-  width: 90%;
+  width: 70%;
 }
 
 .menu .row .menu-card .menu-card-title {
   margin-top: 1rem auto 0.5rem;
-  font-weight: 300;
-  font-size: large;
-  font-weight: bold;
 }
 
 .menu .row .menu-card a {
