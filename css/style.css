@@ -589,3 +589,8 @@ body {
     font-size: 50%;
   }
 }
+@media (max-width: 450px) {
+  .menu .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
